@@ -1,0 +1,7 @@
+---
+# nome do banco de dados da aplicacao
+oc_mysql_db: owncloud
+# login a ser criado para a aplicacao
+oc_mysql_user: tiagomoreira
+# senha a ser atribuida para o login da aplicacao
+oc_mysql_password: password

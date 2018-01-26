@@ -1,0 +1,10 @@
+---
+- name: Cria o banco de dados para o OwnCloud
+  mysql_db:
+    name={{ oc_mysql_db }} state=present
+
+- name: Cria um usuario de banco de dados (nao aplicacao)
+  mysql_user: 
+    name={{ oc_mysql_user }}
+    password={{ oc_mysql_password }}
+    priv=*.*:ALL

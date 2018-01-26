@@ -1,0 +1,6 @@
+- hosts: mysql_server
+  remote_user: tiagomoreira
+  become: yes
+  roles:
+    - server
+    - mysql
